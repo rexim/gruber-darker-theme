@@ -73,6 +73,7 @@ Gruber. Adapted for deftheme by Alexey Kutepov a.k.a. rexim.")
  ;; Parenthesis matching
  `(show-paren-match-face ((t (:background "#52494e" :foreground "#f4f4ff"))))
  `(show-paren-mismatch-face ((t (:foreground "#f4f4ff" :background "#c73c3f"))))
+
  ;; Line highlighting
  `(highlight ((t (:background "#282828" :foreground nil))))
  `(highlight-current-line-face ((t (:background "#282828" :foreground nil))))
