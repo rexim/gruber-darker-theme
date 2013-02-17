@@ -2,6 +2,10 @@
 
 ;; Copyright (C) 2009-2013 Jason R. Blevins
 
+;; Author: Alexey Kutepov <reximkut@gmail.com>
+;; URL: http://github.com/rexim/gruber-darker-theme
+;; Version: 0.1
+
 ;; Permission is hereby granted, free of charge, to any person
 ;; obtaining a copy of this software and associated documentation
 ;; files (the "Software"), to deal in the Software without
