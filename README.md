@@ -11,7 +11,7 @@ hands.
 
 ## Package.el
 
-Enable marmalade package repo if needed --- add the following to your
+Enable marmalade package repo if needed — add the following to your
 emacs config file (.emacs, init.el, whatever):
 
 ```
@@ -32,8 +32,8 @@ clone` command:
 git clone git://github.com/rexim/gruber-darker-theme.git
 ```
 
-Then add path to gruber-darker-theme to custom-theme-load-path list
---- add the following to your emacs config file (.emacs, init.el,
+Then add path to gruber-darker-theme to custom-theme-load-path list —
+add the following to your emacs config file (.emacs, init.el,
 whatever):
 
 ```
