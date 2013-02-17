@@ -96,7 +96,12 @@ Gruber. Adapted for deftheme by Alexey Kutepov a.k.a. rexim.")
  `(font-latex-math-face ((t (:foreground "#73c936"))))
  `(font-latex-string-face ((t (:foreground "#73c936"))))
  `(font-latex-warning-face ((t (:foreground "#f43841"))))
- `(font-latex-slide-title-face ((t (:foreground "#96a6c8")))))
+ `(font-latex-slide-title-face ((t (:foreground "#96a6c8"))))
+
+ ;; ido
+ `(ido-only-match ((t (:foreground "#73c936"))))
+ `(ido-subdir ((t (:foreground "#f43841"))))
+ )
 
 
 ;;;###autoload
