@@ -31,77 +31,95 @@
 A darker variant of the Gruber Dark theme for BBEdit by John
 Gruber. Adapted for deftheme by Alexey Kutepov a.k.a. rexim.")
 
-(custom-theme-set-variables
- 'gruber-darker
- '(frame-brackground-mode (quote dark)))
+;;; Colors with +x are lighter. Colors with -x are darker.
+(let ((gruber-darker-fg "#e4e4ef")
+      (gruber-darker-fg+1 "#f4f4ff")
+      (gruber-darker-fg+2 "#f5f5f5")
+      (gruber-darker-bg "#181818")
+      (gruber-darker-bg+1 "#282828")
+      (gruber-darker-white "white")
+      (gruber-darker-black "black")
+      (gruber-darker-black+1 "#111")
+      (gruber-darker-red-1 "#c73c3f")
+      (gruber-darker-red "#f43841")
+      (gruber-darker-green "#73c936")
+      (gruber-darker-yellow "#ffdd33")
+      (gruber-darker-brown "#cc8c3c")
+      (gruber-darker-quartz "#95a99f")
+      (gruber-darker-quartz+1 "#96a6c8")
+      (gruber-darker-quartz+2 "#9e95c7"))
+  (custom-theme-set-variables
+   'gruber-darker
+   '(frame-brackground-mode (quote dark)))
 
-(custom-theme-set-faces
- 'gruber-darker
+  (custom-theme-set-faces
+   'gruber-darker
 
- ;; Standard font lock faces
- `(default ((t (:foreground "#e4e4ef" :background "#181818"))))
- `(cursor ((t (:foreground "#ffdd33"))))
- `(font-lock-comment-face ((t (:foreground "#cc8c3c"))))
- `(font-lock-comment-delimiter-face ((t (:foreground "#cc8c3c"))))
- `(font-lock-doc-face ((t (:foreground "#73c936"))))
- `(font-lock-doc-string-face ((t (:foreground "#73c936"))))
- `(font-lock-string-face ((t (:foreground "#73c936"))))
- `(font-lock-keyword-face ((t (:foreground "#ffdd33" :bold t))))
- `(font-lock-builtin-face ((t (:foreground "#ffdd33"))))
- `(font-lock-function-name-face ((t (:foreground "#96a6c8"))))
- `(font-lock-variable-name-face ((t (:foreground "#f4f4ff"))))
- `(font-lock-preprocessor-face ((t (:foreground "#95a99f"))))
- `(font-lock-constant-face ((t (:foreground "#95a99f"))))
- `(font-lock-type-face ((t (:foreground "#95a99f"))))
- `(font-lock-warning-face ((t (:foreground "#f43841"))))
- `(font-lock-reference-face ((t (:foreground "#95a99f"))))
- `(trailing-whitespace ((t (:foreground "#000" :background "#f43841"))))
- `(link ((t (:foreground "#96A6C8" :underline t))))
+   ;; Standard font lock faces
+   `(default ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg))))
+   `(cursor ((t (:foreground ,gruber-darker-yellow))))
+   `(font-lock-comment-face ((t (:foreground ,gruber-darker-brown))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,gruber-darker-brown))))
+   `(font-lock-doc-face ((t (:foreground ,gruber-darker-green))))
+   `(font-lock-doc-string-face ((t (:foreground ,gruber-darker-green))))
+   `(font-lock-string-face ((t (:foreground ,gruber-darker-green))))
+   `(font-lock-keyword-face ((t (:foreground ,gruber-darker-yellow :bold t))))
+   `(font-lock-builtin-face ((t (:foreground ,gruber-darker-yellow))))
+   `(font-lock-function-name-face ((t (:foreground ,gruber-darker-quartz+1))))
+   `(font-lock-variable-name-face ((t (:foreground ,gruber-darker-fg+1))))
+   `(font-lock-preprocessor-face ((t (:foreground ,gruber-darker-quartz))))
+   `(font-lock-constant-face ((t (:foreground ,gruber-darker-quartz))))
+   `(font-lock-type-face ((t (:foreground ,gruber-darker-quartz))))
+   `(font-lock-warning-face ((t (:foreground ,gruber-darker-red))))
+   `(font-lock-reference-face ((t (:foreground ,gruber-darker-quartz))))
+   `(trailing-whitespace ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red))))
+   `(link ((t (:foreground ,gruber-darker-quartz+1 :underline t))))
+   `(link-visited ((t (:foreground ,gruber-darker-quartz+2 :underline t))))
 
- ;; Search
- `(isearch ((t (:foreground "#000" :background "#f5f5f5"))))
- `(isearch-lazy-highlight-face ((t (:foreground "#f4f4ff" :background "#5f627f"))))
- `(isearch-fail ((t (:foreground "#000" :background "#f43841"))))
+   ;; Search
+   `(isearch ((t (:foreground ,gruber-darker-black :background ,gruber-darker-fg+2))))
+   `(isearch-lazy-highlight-face ((t (:foreground ,gruber-darker-fg+1 :background "#5f627f"))))
+   `(isearch-fail ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red))))
 
- ;; User interface
- `(fringe ((t (:background "#111" :foreground "#444"))))
- `(border ((t (:background "#111" :foreground "#444"))))
- `(mode-line ((t (:background "#453d41" :foreground "#fff"))))
- `(mode-line-buffer-id ((t (:background "#453d41" :foreground "#fff"))))
- `(mode-line-inactive ((t (:background "#453d41" :foreground "#999"))))
- `(minibuffer-prompt ((t (:foreground "#96A6C8"))))
- `(region ((t (:background "#484848"))))
- `(secondary-selection ((t (:background "#484951" :foreground "#F4F4FF"))))
- `(tooltip ((t (:background "#52494e" :foreground "#fff"))))
+   ;; User interface
+   `(fringe ((t (:background ,gruber-darker-black+1 :foreground "#444"))))
+   `(border ((t (:background ,gruber-darker-black+1 :foreground "#444"))))
+   `(mode-line ((t (:background "#453d41" :foreground ,gruber-darker-white))))
+   `(mode-line-buffer-id ((t (:background "#453d41" :foreground ,gruber-darker-white))))
+   `(mode-line-inactive ((t (:background "#453d41" :foreground "#999"))))
+   `(minibuffer-prompt ((t (:foreground ,gruber-darker-quartz+1))))
+   `(region ((t (:background "#484848"))))
+   `(secondary-selection ((t (:background "#484951" :foreground ,gruber-darker-fg+1))))
+   `(tooltip ((t (:background "#52494e" :foreground ,gruber-darker-white))))
 
- ;; Parenthesis matching
- `(show-paren-match-face ((t (:background "#52494e" :foreground "#f4f4ff"))))
- `(show-paren-mismatch-face ((t (:foreground "#f4f4ff" :background "#c73c3f"))))
+   ;; Parenthesis matching
+   `(show-paren-match-face ((t (:background "#52494e" :foreground ,gruber-darker-fg+1))))
+   `(show-paren-mismatch-face ((t (:foreground ,gruber-darker-fg+1 :background ,gruber-darker-red-1))))
 
- ;; Line highlighting
- `(highlight ((t (:background "#282828" :foreground nil))))
- `(highlight-current-line-face ((t (:background "#282828" :foreground nil))))
+   ;; Line highlighting
+   `(highlight ((t (:background ,gruber-darker-bg+1 :foreground nil))))
+   `(highlight-current-line-face ((t (:background ,gruber-darker-bg+1 :foreground nil))))
 
- ;; Calendar
- `(holiday-face ((t (:foreground "#f43841"))))
+   ;; Calendar
+   `(holiday-face ((t (:foreground ,gruber-darker-red))))
 
- ;; Info
- `(info-xref ((t (:foreground "#96a6c8"))))
- `(info-visited ((t (:foreground "#9e95c7"))))
+   ;; Info
+   `(info-xref ((t (:foreground ,gruber-darker-quartz+1))))
+   `(info-visited ((t (:foreground ,gruber-darker-quartz+2))))
 
- ;; AUCTeX
- `(font-latex-sectioning-5-face ((t (:foreground "#96a6c8" :bold t))))
- `(font-latex-bold-face ((t (:foreground "#95a99f" :bold t))))
- `(font-latex-italic-face ((t (:foreground "#95a99f" :italic t))))
- `(font-latex-math-face ((t (:foreground "#73c936"))))
- `(font-latex-string-face ((t (:foreground "#73c936"))))
- `(font-latex-warning-face ((t (:foreground "#f43841"))))
- `(font-latex-slide-title-face ((t (:foreground "#96a6c8"))))
+   ;; AUCTeX
+   `(font-latex-sectioning-5-face ((t (:foreground ,gruber-darker-quartz+1 :bold t))))
+   `(font-latex-bold-face ((t (:foreground ,gruber-darker-quartz :bold t))))
+   `(font-latex-italic-face ((t (:foreground ,gruber-darker-quartz :italic t))))
+   `(font-latex-math-face ((t (:foreground ,gruber-darker-green))))
+   `(font-latex-string-face ((t (:foreground ,gruber-darker-green))))
+   `(font-latex-warning-face ((t (:foreground ,gruber-darker-red))))
+   `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-quartz+1))))
 
- ;; ido
- `(ido-only-match ((t (:foreground "#73c936"))))
- `(ido-subdir ((t (:foreground "#f43841"))))
- )
+   ;; ido
+   `(ido-only-match ((t (:foreground ,gruber-darker-green))))
+   `(ido-subdir ((t (:foreground ,gruber-darker-red))))
+   ))
 
 
 ;;;###autoload
