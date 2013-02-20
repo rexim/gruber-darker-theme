@@ -119,6 +119,9 @@ Gruber. Adapted for deftheme by Alexey Kutepov a.k.a. rexim.")
    ;; ido
    `(ido-only-match ((t (:foreground ,gruber-darker-green))))
    `(ido-subdir ((t (:foreground ,gruber-darker-red))))
+
+   ;; Compilation
+   `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
    ))
 
 
