@@ -29,25 +29,34 @@
 (deftheme gruber-darker
   "Gruber Darker color theme for Emacs by Jason Blevins.
 A darker variant of the Gruber Dark theme for BBEdit by John
-Gruber. Adapted for deftheme by Alexey Kutepov a.k.a. rexim.")
+Gruber. Adapted for deftheme and extended by Alexey Kutepov
+a.k.a. rexim.")
 
 ;;; Colors with +x are lighter. Colors with -x are darker.
-(let ((gruber-darker-fg "#e4e4ef")
-      (gruber-darker-fg+1 "#f4f4ff")
-      (gruber-darker-fg+2 "#f5f5f5")
-      (gruber-darker-bg "#181818")
-      (gruber-darker-bg+1 "#282828")
-      (gruber-darker-white "white")
-      (gruber-darker-black "black")
-      (gruber-darker-black+1 "#111")
-      (gruber-darker-red-1 "#c73c3f")
-      (gruber-darker-red "#f43841")
-      (gruber-darker-green "#73c936")
-      (gruber-darker-yellow "#ffdd33")
-      (gruber-darker-brown "#cc8c3c")
-      (gruber-darker-quartz "#95a99f")
+;;; Use rainbow-mode.
+(let ((gruber-darker-black    "black")
+      (gruber-darker-black+1  "#111")
+      (gruber-darker-white    "white")
+      (gruber-darker-fg       "#e4e4ef")
+      (gruber-darker-fg+1     "#f4f4ff")
+      (gruber-darker-fg+2     "#f5f5f5")
+      (gruber-darker-gray     "#444")
+      (gruber-derker-gray+1   "#999")
+      (gruber-darker-bg       "#181818")
+      (gruber-darker-bg+1     "#282828")
+      (gruber-darker-bg+2     "#453d41")
+      (gruber-darker-bg+3     "#484848")
+      (gruber-darker-bg+4     "#52494e")
+      (gruber-darker-red-1    "#c73c3f")
+      (gruber-darker-red      "#f43841")
+      (gruber-darker-green    "#73c936")
+      (gruber-darker-yellow   "#ffdd33")
+      (gruber-darker-brown    "#cc8c3c")
+      (gruber-darker-sea-wave "#5f627f")
+      (gruber-darker-quartz   "#95a99f")
       (gruber-darker-quartz+1 "#96a6c8")
-      (gruber-darker-quartz+2 "#9e95c7"))
+      (gruber-darker-quartz+2 "#9e95c7")
+      )
   (custom-theme-set-variables
    'gruber-darker
    '(frame-brackground-mode (quote dark)))
@@ -78,22 +87,22 @@ Gruber. Adapted for deftheme by Alexey Kutepov a.k.a. rexim.")
 
    ;; Search
    `(isearch ((t (:foreground ,gruber-darker-black :background ,gruber-darker-fg+2))))
-   `(isearch-lazy-highlight-face ((t (:foreground ,gruber-darker-fg+1 :background "#5f627f"))))
+   `(isearch-lazy-highlight-face ((t (:foreground ,gruber-darker-fg+1 :background ,gruber-darker-sea-wave))))
    `(isearch-fail ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red))))
 
    ;; User interface
-   `(fringe ((t (:background ,gruber-darker-black+1 :foreground "#444"))))
-   `(border ((t (:background ,gruber-darker-black+1 :foreground "#444"))))
-   `(mode-line ((t (:background "#453d41" :foreground ,gruber-darker-white))))
-   `(mode-line-buffer-id ((t (:background "#453d41" :foreground ,gruber-darker-white))))
-   `(mode-line-inactive ((t (:background "#453d41" :foreground "#999"))))
+   `(fringe ((t (:background ,gruber-darker-black+1 :foreground ,gruber-darker-gray))))
+   `(border ((t (:background ,gruber-darker-black+1 :foreground ,gruber-darker-gray))))
+   `(mode-line ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-darker-white))))
+   `(mode-line-buffer-id ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-darker-white))))
+   `(mode-line-inactive ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-derker-gray+1))))
    `(minibuffer-prompt ((t (:foreground ,gruber-darker-quartz+1))))
-   `(region ((t (:background "#484848"))))
-   `(secondary-selection ((t (:background "#484951" :foreground ,gruber-darker-fg+1))))
-   `(tooltip ((t (:background "#52494e" :foreground ,gruber-darker-white))))
+   `(region ((t (:background ,gruber-darker-bg+3))))
+   `(secondary-selection ((t (:background ,gruber-darker-bg+3 :foreground ,gruber-darker-fg+1))))
+   `(tooltip ((t (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-white))))
 
    ;; Parenthesis matching
-   `(show-paren-match-face ((t (:background "#52494e" :foreground ,gruber-darker-fg+1))))
+   `(show-paren-match-face ((t (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-fg+1))))
    `(show-paren-mismatch-face ((t (:foreground ,gruber-darker-fg+1 :background ,gruber-darker-red-1))))
 
    ;; Line highlighting
