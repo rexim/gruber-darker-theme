@@ -125,9 +125,10 @@ a.k.a. rexim.")
    `(font-latex-warning-face ((t (:foreground ,gruber-darker-red))))
    `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-quartz+1))))
 
-   ;; ido
-   `(ido-only-match ((t (:foreground ,gruber-darker-green))))
-   `(ido-subdir ((t (:foreground ,gruber-darker-red))))
+   ;; ido-mode
+   `(ido-first-match ((t (:foreground ,gruber-darker-yellow :bold nil))))
+   `(ido-only-match ((t (:foreground ,gruber-darker-yellow :weight bold))))
+   `(ido-subdir ((t (:foreground "SkyBlue" :weight bold)))) ;FIXME: classify this color
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
