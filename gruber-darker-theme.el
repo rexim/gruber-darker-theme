@@ -56,6 +56,7 @@ a.k.a. rexim.")
       (gruber-darker-quartz   "#95a99f")
       (gruber-darker-quartz+1 "#96a6c8")
       (gruber-darker-quartz+2 "#9e95c7")
+      (gruber-darker-skyblue  "SkyBlue")
       )
   (custom-theme-set-variables
    'gruber-darker
@@ -125,10 +126,24 @@ a.k.a. rexim.")
    `(font-latex-warning-face ((t (:foreground ,gruber-darker-red))))
    `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-quartz+1))))
 
+   ;; Dired
+   `(dired-directory ((t (:foreground ,gruber-darker-skyblue :weight bold))))
+   ;; `(dired-flagged )
+   ;; `(dired-header )
+   ;; `(dired-ignored )
+   ;; `(dired-mark )
+   ;; `(dired-marked )
+   ;; `(dired-perm-write )
+   ;; `(dired-symlink )
+   ;; `(dired-warning )
+
    ;; ido-mode
    `(ido-first-match ((t (:foreground ,gruber-darker-green :bold nil))))
    `(ido-only-match ((t (:foreground ,gruber-darker-green))))
-   `(ido-subdir ((t (:foreground "SkyBlue" :weight bold)))) ;FIXME: classify this color
+   `(ido-subdir ((t (:foreground ,gruber-darker-skyblue :weight bold))))
+   ;; `(ido-incomplete-regexp )
+   ;; `(ido-indicator )
+   ;; `(ido-virtual )
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
