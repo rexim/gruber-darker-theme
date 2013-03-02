@@ -127,6 +127,7 @@ a.k.a. rexim.")
 
    ;; EShell
    `(eshell-ls-directory ((t (:foreground ,gruber-darker-quartz+1))))
+   `(eshell-ls-symlink ((t (:foreground ,gruber-darker-yellow))))
 
    ;; Dired
    `(dired-directory ((t (:foreground ,gruber-darker-quartz+1 :weight bold))))
