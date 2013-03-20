@@ -129,9 +129,11 @@ a.k.a. rexim.")
    ;; EShell
    `(eshell-ls-directory ((,class (:foreground ,gruber-darker-quartz+1))))
    `(eshell-ls-symlink ((,class (:foreground ,gruber-darker-yellow))))
+   `(eshell-ls-backup ((,class (:foreground ,gruber-darker-quartz))))
 
    ;; Dired
    `(dired-directory ((,class (:foreground ,gruber-darker-quartz+1 :weight bold))))
+   `(dired-ignored ((,class (:foreground ,gruber-darker-quartz :inherit nil))))
 
    ;; ido-mode
    `(ido-first-match ((,class (:foreground ,gruber-darker-green :bold nil))))
