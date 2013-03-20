@@ -45,4 +45,4 @@ Use `M-x customize-themes` to change your current theme.
 
 # Screenshot
 
-![gruber-darker-theme](https://github.com/rexim/gruber-darker-theme/raw/master/gruber-darker-theme.png)
+![gruber-darker-theme](http://i.imgur.com/8dY71hX.png)
