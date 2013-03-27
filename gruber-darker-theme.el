@@ -148,7 +148,7 @@ a.k.a. rexim.")
    `(egg-term ((,class (:foreground ,gruber-darker-yellow))))
    `(egg-branch-mono ((,class (:foreground ,gruber-darker-yellow))))
    `(egg-diff-add ((,class (:foreground ,gruber-darker-green))))
-   `(egg-diff-del ((,class (:foreground ,gruber-darker-red-1))))
+   `(egg-diff-del ((,class (:foreground ,gruber-darker-red))))
    ))
 
 
