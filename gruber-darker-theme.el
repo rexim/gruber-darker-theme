@@ -102,6 +102,9 @@ a.k.a. rexim.")
    `(secondary-selection ((,class (:background ,gruber-darker-bg+3 :foreground ,gruber-darker-fg+1))))
    `(tooltip ((,class (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-white))))
 
+   ;; Custom
+   `(custom-state ((,class (:foreground ,gruber-darker-green))))
+
    ;; Parenthesis matching
    `(show-paren-match-face ((,class (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-fg+1))))
    `(show-paren-mismatch-face ((,class (:foreground ,gruber-darker-fg+1 :background ,gruber-darker-red-1))))
@@ -149,6 +152,9 @@ a.k.a. rexim.")
    `(egg-branch-mono ((,class (:foreground ,gruber-darker-yellow))))
    `(egg-diff-add ((,class (:foreground ,gruber-darker-green))))
    `(egg-diff-del ((,class (:foreground ,gruber-darker-red))))
+
+   ;; message
+   `(message-header-name ((,class (:foreground ,gruber-darker-green))))
    ))
 
 
