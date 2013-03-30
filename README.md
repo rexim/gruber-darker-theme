@@ -6,13 +6,23 @@ deftheme and extended by Alexey Kutepov a.k.a. rexim.
 
 # Installation
 
-You can use built-in package manager (package.el) or do all by your
-hands.
+You can use built-in package manager (package.el) or do everything by
+your hands.
 
-## Package.el
+## Using package manager
 
-Enable marmalade package repo if needed — add the following to your
-emacs config file (.emacs, init.el, whatever):
+This theme is available on two repositories:
+[MELPA](http://melpa.milkbox.net/) and
+[Marmalade](http://marmalade-repo.org/). Add the following to your
+emacs config file somewhere (.emacs, init.el, whatever)
+
+```
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+```
+
+for [MELPA](http://melpa.milkbox.net/), or
 
 ```
 (require 'package)
@@ -20,12 +30,17 @@ emacs config file (.emacs, init.el, whatever):
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 ```
 
+for [Marmalade](Http://marmalade-repo.org/).
+
+I personally prefer [MELPA](http://melpa.milkbox.net/), 'cause it
+hourly updates its packages from upstream source.
+
 Then use `M-x package-install RET gruber-darker-theme RET` to install
 the theme. Use `M-x customize-themes` to change your current theme.
 
-## Manual
+## Manual old fashioned way
 
-Download the theme to a local directory. You can do it through `git
+Download the theme to your local directory. You can do it through `git
 clone` command:
 
 ```
@@ -33,8 +48,8 @@ git clone git://github.com/rexim/gruber-darker-theme.git
 ```
 
 Then add path to gruber-darker-theme to custom-theme-load-path list —
-add the following to your emacs config file (.emacs, init.el,
-whatever):
+add the following to your emacs config file somewhere (.emacs,
+init.el, whatever):
 
 ```
 (add-to-list 'custom-theme-load-path
