@@ -4,6 +4,10 @@ Gruber Darker color theme for Emacs by Jason Blevins. A darker variant
 of the Gruber Dark theme for BBEdit by John Gruber. Adapted for
 deftheme and extended by Alexey Kutepov a.k.a. rexim.
 
+# Screenshot
+
+![gruber-darker-theme](http://i.imgur.com/8dY71hX.png)
+
 # Installation
 
 You can use built-in package manager (package.el) or do everything by
@@ -57,7 +61,3 @@ init.el, whatever):
 ```
 
 Use `M-x customize-themes` to change your current theme.
-
-# Screenshot
-
-![gruber-darker-theme](http://i.imgur.com/8dY71hX.png)
