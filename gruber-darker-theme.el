@@ -149,7 +149,7 @@ a.k.a. rexim.")
    ;; egg
    `(egg-text-base ((,class (:foreground ,gruber-darker-fg))))
    `(egg-help-header-1 ((,class (:foreground ,gruber-darker-yellow))))
-   `(egg-help-header-2 ((,class (:foreground ,gruber-darker-green))))
+   `(egg-help-header-2 ((,class (:foreground ,gruber-darker-quartz+1))))
    `(egg-branch ((,class (:foreground ,gruber-darker-yellow))))
    `(egg-branch-mono ((,class (:foreground ,gruber-darker-yellow))))
    `(egg-term ((,class (:foreground ,gruber-darker-yellow))))
