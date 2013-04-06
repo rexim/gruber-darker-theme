@@ -32,7 +32,7 @@ A darker variant of the Gruber Dark theme for BBEdit by John
 Gruber. Adapted for deftheme and extended by Alexey Kutepov
 a.k.a. rexim.")
 
-;;; Use rainbow-mode.
+;;; Install rainbow-mode.
 (let ((class '((class color) (min-colors 89)))
       ;; Colors with +x are lighter. Colors with -x are darker.
       (gruber-darker-black    "black")
@@ -172,6 +172,8 @@ a.k.a. rexim.")
 
 ;; Local Variables:
 ;; no-byte-compile: t
+;; indent-tabs-mode: nil
+;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
 ;; End:
 
 ;;; gruber-darker-theme.el ends here.
