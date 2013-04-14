@@ -1,19 +1,21 @@
-# Gruber Darker
+# Gruber Darker #
 
-Gruber Darker color theme for Emacs by Jason Blevins. A darker variant
-of the Gruber Dark theme for BBEdit by John Gruber. Adapted for
-deftheme and extended by Alexey Kutepov a.k.a. rexim.
+[Gruber Darker](http://jblevins.org/projects/emacs-color-themes/color-theme-gruber-darker.el.html)
+color theme for Emacs by Jason Blevins. A darker variant of the
+[Gruber Dark](http://daringfireball.net/projects/bbcolors/schemes/)
+theme for BBEdit by John Gruber. Adapted for deftheme and extended by
+Alexey Kutepov a.k.a. rexim.
 
-# Screenshot
+# Screenshot #
 
 ![gruber-darker-theme](http://i.imgur.com/8dY71hX.png)
 
-# Installation
+# Installation #
 
 You can use built-in package manager (package.el) or do everything by
 your hands.
 
-## Using package manager
+## Using package manager ##
 
 This theme is available on two repositories:
 [MELPA](http://melpa.milkbox.net/) and
@@ -34,7 +36,7 @@ for [MELPA](http://melpa.milkbox.net/), or
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 ```
 
-for [Marmalade](Http://marmalade-repo.org/).
+for [Marmalade](http://marmalade-repo.org/).
 
 I personally prefer [MELPA](http://melpa.milkbox.net/), 'cause it
 hourly updates its packages from upstream source.
@@ -42,7 +44,7 @@ hourly updates its packages from upstream source.
 Then use `M-x package-install RET gruber-darker-theme RET` to install
 the theme. Use `M-x customize-themes` to change your current theme.
 
-## Manual old fashioned way
+## Manual old fashioned way ##
 
 Download the theme to your local directory. You can do it through `git
 clone` command:
@@ -61,3 +63,14 @@ init.el, whatever):
 ```
 
 Use `M-x customize-themes` to change your current theme.
+
+# Contribution #
+
+Gruber Darker is an awesome theme. But it has a lack of support for
+many good modes. I add color faces only for modes I use. If you like
+this theme and use a mode that looks very bad on it, feel free to add
+appropriate color faces (see gruber-darker-theme.el) and send me a
+pull request. Please, attach to the pull request a screenshot which
+shows the look before and after the modification.
+
+Thanks.

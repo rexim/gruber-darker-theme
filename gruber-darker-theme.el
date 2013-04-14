@@ -1,6 +1,6 @@
 ;;; gruber-darker-theme.el --- Gruber Darker color theme for Emacs 24.
 
-;; Copyright (C) 2009-2013 Jason R. Blevins
+;; Copyright (C) 2013 Alexey Kutepov a.k.a rexim
 
 ;; Author: Alexey Kutepov <reximkut@gmail.com>
 ;; URL: http://github.com/rexim/gruber-darker-theme
@@ -26,11 +26,15 @@
 ;; CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ;; SOFTWARE.
 
+;;; Commentary:
+;;
+;; Gruber Darker color theme for Emacs by Jason Blevins. A darker
+;; variant of the Gruber Dark theme for BBEdit by John Gruber. Adapted
+;; for deftheme and extended by Alexey Kutepov a.k.a. rexim.
+
+
 (deftheme gruber-darker
-  "Gruber Darker color theme for Emacs by Jason Blevins.
-A darker variant of the Gruber Dark theme for BBEdit by John
-Gruber. Adapted for deftheme and extended by Alexey Kutepov
-a.k.a. rexim.")
+  "Gruber Darker color theme for Emacs 24")
 
 ;; Install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
