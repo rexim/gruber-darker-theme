@@ -163,6 +163,12 @@
 
    ;; message
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
+
+   ;; jabber
+   `(jabber-chat-prompt-foreign ((t (:foreground ,gruber-darker-red))))
+   `(jabber-chat-prompt-local ((t (:foreground ,gruber-darker-quartz :bold nil))))
+   `(jabber-chat-prompt-system ((t (:foreground ,gruber-darker-green))))
+   `(jabber-roster-user-online ((t (:foreground ,gruber-darker-green))))
    ))
 
 
