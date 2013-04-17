@@ -70,7 +70,7 @@
 
    ;; Standard font lock faces
    `(default ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg))))
-   `(cursor ((t (:foreground ,gruber-darker-yellow))))
+   `(cursor ((t (:background ,gruber-darker-fg))))
    `(font-lock-comment-face ((t (:foreground ,gruber-darker-brown))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,gruber-darker-brown))))
    `(font-lock-doc-face ((t (:foreground ,gruber-darker-green))))
