@@ -148,7 +148,6 @@
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
-   `(compilation-error ((t (:foreground ,gruber-darker-red))))
 
    ;; egg
    `(egg-text-base ((t (:foreground ,gruber-darker-fg))))
