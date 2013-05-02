@@ -88,6 +88,7 @@
    `(trailing-whitespace ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red))))
    `(link ((t (:foreground ,gruber-darker-quartz+1 :underline t))))
    `(link-visited ((t (:foreground ,gruber-darker-quartz+2 :underline t))))
+   `(match ((t (:background ,gruber-darker-bg+4))))
 
    ;; Search
    `(isearch ((t (:foreground ,gruber-darker-black :background ,gruber-darker-fg+2))))
