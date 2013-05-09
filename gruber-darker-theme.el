@@ -147,6 +147,10 @@
    `(ido-only-match ((t (:foreground ,gruber-darker-green))))
    `(ido-subdir ((t (:foreground ,gruber-darker-quartz+1 :weight bold))))
 
+   ;; helm-mode
+   `(helm-candidate-number ((t (:background ,gruber-darker-quartz+1))))
+   `(helm-selection ((t (:background ,gruber-darker-bg+1))))
+
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
 
