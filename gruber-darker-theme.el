@@ -133,6 +133,9 @@
    `(font-latex-warning-face ((t (:foreground ,gruber-darker-red))))
    `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-quartz+1))))
 
+   ;; linum-mode
+   `(linum ((t (:foreground ,gruber-darker-quartz :background ,gruber-darker-bg))))
+
    ;; EShell
    `(eshell-ls-directory ((t (:foreground ,gruber-darker-quartz+1))))
    `(eshell-ls-symlink ((t (:foreground ,gruber-darker-yellow))))
