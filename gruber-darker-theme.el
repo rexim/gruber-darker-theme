@@ -172,6 +172,10 @@
    ;; message
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
 
+   ;; show-paren
+   `(show-paren-mismatch ((t (:foreground ,gruber-darker-red :background ,gruber-darker-bg :weight bold))))
+   `(show-paren-match ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg :weigt bold))))
+
    ;; jabber
    `(jabber-chat-prompt-foreign ((t (:foreground ,gruber-darker-quartz :bold nil))))
    `(jabber-chat-prompt-local ((t (:foreground ,gruber-darker-yellow))))
