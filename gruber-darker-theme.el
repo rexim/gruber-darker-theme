@@ -146,8 +146,8 @@
    `(dired-ignored ((t (:foreground ,gruber-darker-quartz :inherit nil))))
 
    ;; ido-mode
-   `(ido-first-match ((t (:foreground ,gruber-darker-green :bold nil))))
-   `(ido-only-match ((t (:foreground ,gruber-darker-green))))
+   `(ido-first-match ((t (:foreground ,gruber-darker-yellow :bold nil))))
+   `(ido-only-match ((t (:foreground ,gruber-darker-brown :weight bold))))
    `(ido-subdir ((t (:foreground ,gruber-darker-quartz+1 :weight bold))))
 
    ;; helm-mode

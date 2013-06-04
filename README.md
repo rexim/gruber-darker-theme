@@ -68,9 +68,8 @@ Use `M-x customize-themes` to change your current theme.
 
 Gruber Darker is an awesome theme. But it has a lack of support for
 many good modes. I add color faces only for modes I use. If you like
-this theme and use a mode that looks very bad on it, feel free to add
-appropriate color faces (see gruber-darker-theme.el) and send me a
-pull request. Please, attach to the pull request a screenshot which
-shows the look before and after the modification.
+this theme and use a mode that looks very bad with it, feel free to
+add appropriate color faces (see file gruber-darker-theme.el) and send
+me a pull request.
 
 Thanks.
