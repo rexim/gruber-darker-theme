@@ -174,7 +174,7 @@
 
    ;; show-paren
    `(show-paren-mismatch ((t (:foreground ,gruber-darker-red :background ,gruber-darker-bg :weight bold))))
-   `(show-paren-match ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg :weigt bold))))
+   `(show-paren-match ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg :weight bold))))
 
    ;; jabber
    `(jabber-chat-prompt-foreign ((t (:foreground ,gruber-darker-quartz :bold nil))))
