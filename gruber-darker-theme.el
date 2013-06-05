@@ -109,9 +109,9 @@
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
 
-   ;; Parenthesis matching
-   `(show-paren-match-face ((t (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-fg+1))))
-   `(show-paren-mismatch-face ((t (:foreground ,gruber-darker-fg+1 :background ,gruber-darker-red-1))))
+   ;; show-paren
+   `(show-paren-match-face ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-green :weight bold))))
+   `(show-paren-mismatch-face ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-red :weight bold))))
 
    ;; Line highlighting
    `(highlight ((t (:background ,gruber-darker-bg+1 :foreground nil))))
@@ -171,10 +171,6 @@
 
    ;; message
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
-
-   ;; show-paren
-   `(show-paren-mismatch ((t (:foreground ,gruber-darker-red :background ,gruber-darker-bg :weight bold))))
-   `(show-paren-match ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg :weight bold))))
 
    ;; jabber
    `(jabber-chat-prompt-foreign ((t (:foreground ,gruber-darker-quartz :bold nil))))
