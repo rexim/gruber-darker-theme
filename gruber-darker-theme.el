@@ -46,6 +46,7 @@
       (gruber-darker-fg+2     "#f5f5f5")
       (gruber-darker-gray     "#444")
       (gruber-darker-gray+1   "#999")
+      (gruber-darker-bg-1     "#101010")
       (gruber-darker-bg       "#181818")
       (gruber-darker-bg+1     "#282828")
       (gruber-darker-bg+2     "#453d41")
@@ -156,6 +157,10 @@
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
+
+   ;; flymake
+   `(flymake-errline ((t (:background ,gruber-darker-bg-1 :foreground ,gruber-darker-red :bold t :underline t))))
+   `(flymake-warnline ((t (:background ,gruber-darker-bg+1 :italic t))))
 
    ;; egg
    `(egg-text-base ((t (:foreground ,gruber-darker-fg))))
