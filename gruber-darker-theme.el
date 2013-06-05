@@ -77,7 +77,7 @@
    `(font-lock-doc-face ((t (:foreground ,gruber-darker-green))))
    `(font-lock-doc-string-face ((t (:foreground ,gruber-darker-green))))
    `(font-lock-string-face ((t (:foreground ,gruber-darker-green))))
-   `(font-lock-keyword-face ((t (:foreground ,gruber-darker-yellow))))
+   `(font-lock-keyword-face ((t (:foreground ,gruber-darker-yellow :bold t))))
    `(font-lock-builtin-face ((t (:foreground ,gruber-darker-yellow))))
    `(font-lock-function-name-face ((t (:foreground ,gruber-darker-quartz+1))))
    `(font-lock-variable-name-face ((t (:foreground ,gruber-darker-fg+1))))
