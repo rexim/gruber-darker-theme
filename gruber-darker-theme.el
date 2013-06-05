@@ -70,7 +70,8 @@
    'gruber-darker
 
    ;; Standard font lock faces
-   `(default ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg))))
+   `(default ((t ,(list :foreground gruber-darker-fg
+                        :background gruber-darker-bg))))
    `(cursor ((t (:background ,gruber-darker-fg))))
    `(font-lock-comment-face ((t (:foreground ,gruber-darker-brown))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,gruber-darker-brown))))
@@ -86,37 +87,54 @@
    `(font-lock-type-face ((t (:foreground ,gruber-darker-quartz))))
    `(font-lock-warning-face ((t (:foreground ,gruber-darker-red))))
    `(font-lock-reference-face ((t (:foreground ,gruber-darker-quartz))))
-   `(trailing-whitespace ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red))))
+   `(trailing-whitespace ((t ,(list :foreground gruber-darker-black
+                                    :background gruber-darker-red))))
    `(link ((t (:foreground ,gruber-darker-quartz+1 :underline t))))
    `(link-visited ((t (:foreground ,gruber-darker-quartz+2 :underline t))))
    `(match ((t (:background ,gruber-darker-bg+4))))
 
    ;; Search
-   `(isearch ((t (:foreground ,gruber-darker-black :background ,gruber-darker-fg+2))))
-   `(isearch-lazy-highlight-face ((t (:foreground ,gruber-darker-fg+1 :background ,gruber-darker-sea-wave))))
-   `(isearch-fail ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red))))
+   `(isearch ((t ,(list :foreground gruber-darker-black
+                        :background gruber-darker-fg+2))))
+   `(isearch-lazy-highlight-face ((t ,(list
+                                       :foreground gruber-darker-fg+1
+                                       :background gruber-darker-sea-wave))))
+   `(isearch-fail ((t ,(list :foreground gruber-darker-black
+                             :background gruber-darker-red))))
 
    ;; User interface
-   `(fringe ((t (:background ,gruber-darker-black+1 :foreground ,gruber-darker-gray))))
-   `(border ((t (:background ,gruber-darker-black+1 :foreground ,gruber-darker-gray))))
-   `(mode-line ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-darker-white))))
-   `(mode-line-buffer-id ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-darker-white))))
-   `(mode-line-inactive ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-darker-gray+1))))
+   `(fringe ((t ,(list :background gruber-darker-black+1
+                       :foreground gruber-darker-gray))))
+   `(border ((t ,(list :background gruber-darker-black+1
+                       :foreground gruber-darker-gray))))
+   `(mode-line ((t ,(list :background gruber-darker-bg+2
+                          :foreground gruber-darker-white))))
+   `(mode-line-buffer-id ((t ,(list :background gruber-darker-bg+2
+                                    :foreground gruber-darker-white))))
+   `(mode-line-inactive ((t ,(list :background gruber-darker-bg+2
+                                   :foreground gruber-darker-gray+1))))
    `(minibuffer-prompt ((t (:foreground ,gruber-darker-quartz+1))))
    `(region ((t (:background ,gruber-darker-bg+3))))
-   `(secondary-selection ((t (:background ,gruber-darker-bg+3 :foreground ,gruber-darker-fg+1))))
-   `(tooltip ((t (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-white))))
+   `(secondary-selection ((t ,(list :background gruber-darker-bg+3
+                                    :foreground gruber-darker-fg+1))))
+   `(tooltip ((t ,(list :background gruber-darker-bg+4
+                        :foreground gruber-darker-white))))
 
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
 
    ;; show-paren
-   `(show-paren-match-face ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-green :weight bold))))
-   `(show-paren-mismatch-face ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-red :weight bold))))
+   `(show-paren-match-face ((t ,(list :background gruber-darker-bg
+                                      :foreground gruber-darker-green
+                                      :weight 'bold))))
+   `(show-paren-mismatch-face ((t ,(list :background gruber-darker-bg
+                                         :foreground gruber-darker-red
+                                         :weight 'bold))))
 
    ;; Line highlighting
    `(highlight ((t (:background ,gruber-darker-bg+1 :foreground nil))))
-   `(highlight-current-line-face ((t (:background ,gruber-darker-bg+1 :foreground nil))))
+   `(highlight-current-line-face ((t ,(list :background gruber-darker-bg+1
+                                            :foreground nil))))
 
    ;; Calendar
    `(holiday-face ((t (:foreground ,gruber-darker-red))))
@@ -126,7 +144,8 @@
    `(info-visited ((t (:foreground ,gruber-darker-quartz+2))))
 
    ;; AUCTeX
-   `(font-latex-sectioning-5-face ((t (:foreground ,gruber-darker-quartz+1 :bold t))))
+   `(font-latex-sectioning-5-face ((t ,(list :foreground gruber-darker-quartz+1
+                                             :bold t))))
    `(font-latex-bold-face ((t (:foreground ,gruber-darker-quartz :bold t))))
    `(font-latex-italic-face ((t (:foreground ,gruber-darker-quartz :italic t))))
    `(font-latex-math-face ((t (:foreground ,gruber-darker-green))))
@@ -135,7 +154,8 @@
    `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-quartz+1))))
 
    ;; linum-mode
-   `(linum ((t (:foreground ,gruber-darker-quartz :background ,gruber-darker-bg))))
+   `(linum ((t `(list :foreground gruber-darker-quartz
+                      :background gruber-darker-bg))))
 
    ;; EShell
    `(eshell-ls-directory ((t (:foreground ,gruber-darker-quartz+1))))
@@ -152,14 +172,24 @@
    `(ido-subdir ((t (:foreground ,gruber-darker-quartz+1 :weight bold))))
 
    ;; helm-mode
-   `(helm-candidate-number ((t (:background ,gruber-darker-quartz+1))))
-   `(helm-selection ((t (:background ,gruber-darker-bg+1))))
+   `(helm-source-header ((t ,(list :foreground gruber-darker-yellow
+                                   :background gruber-darker-bg
+                                   :underline nil
+                                   :weight 'bold
+                                   :box (list :line-width -1
+                                              :style 'released-button)))))
+   `(helm-candidate-number ((t ,(list :background gruber-darker-bg
+                                      :foreground gruber-darker-yellow))))
+   `(helm-selection ((t (:background ,gruber-darker-bg+1 :underline nil))))
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
 
    ;; flymake
-   `(flymake-errline ((t (:background ,gruber-darker-bg-1 :foreground ,gruber-darker-red :bold t :underline t))))
+   `(flymake-errline ((t ,(list :background gruber-darker-bg-1
+                                :foreground gruber-darker-red
+                                :bold t
+                                :underline t))))
    `(flymake-warnline ((t (:background ,gruber-darker-bg+1 :italic t))))
 
    ;; egg
@@ -178,7 +208,8 @@
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
 
    ;; jabber
-   `(jabber-chat-prompt-foreign ((t (:foreground ,gruber-darker-quartz :bold nil))))
+   `(jabber-chat-prompt-foreign ((t ,(list :foreground gruber-darker-quartz
+                                           :bold nil))))
    `(jabber-chat-prompt-local ((t (:foreground ,gruber-darker-yellow))))
    `(jabber-chat-prompt-system ((t (:foreground ,gruber-darker-green))))
    `(jabber-roster-user-online ((t (:foreground ,gruber-darker-green))))
