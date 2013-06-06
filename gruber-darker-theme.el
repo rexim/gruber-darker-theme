@@ -190,7 +190,6 @@
    `(helm-ff-executable ((t (:foreground ,gruber-darker-green))))
    `(helm-ff-invalid-symlink ((t ,(list :foreground gruber-darker-bg
                                         :background gruber-darker-red))))
-   
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
