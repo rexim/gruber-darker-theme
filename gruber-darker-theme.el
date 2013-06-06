@@ -178,9 +178,11 @@
                                    :weight 'bold
                                    :box (list :line-width -1
                                               :style 'released-button)))))
-   `(helm-candidate-number ((t ,(list :background gruber-darker-bg
-                                      :foreground gruber-darker-yellow))))
    `(helm-selection ((t (:background ,gruber-darker-bg+1 :underline nil))))
+   `(helm-selection-line ((t (:background ,gruber-darker-bg+1))))
+   `(helm-candidate-number ((t ,(list :background gruber-darker-bg+2
+                                      :foreground gruber-darker-yellow
+                                      :bold t))))
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
