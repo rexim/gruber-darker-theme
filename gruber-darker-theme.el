@@ -161,6 +161,7 @@
    `(eshell-ls-directory ((t (:foreground ,gruber-darker-quartz+1))))
    `(eshell-ls-symlink ((t (:foreground ,gruber-darker-yellow))))
    `(eshell-ls-backup ((t (:foreground ,gruber-darker-quartz))))
+   `(eshell-ls-executable ((t (:foreground ,gruber-darker-green))))
 
    ;; Dired
    `(dired-directory ((t (:foreground ,gruber-darker-quartz+1 :weight bold))))
@@ -174,8 +175,6 @@
    ;; helm-mode
    `(helm-source-header ((t ,(list :foreground gruber-darker-yellow
                                    :background gruber-darker-bg
-                                   :underline nil
-                                   :weight 'bold
                                    :box (list :line-width -1
                                               :style 'released-button)))))
    `(helm-selection ((t (:background ,gruber-darker-bg+1 :underline nil))))
@@ -183,6 +182,15 @@
    `(helm-candidate-number ((t ,(list :background gruber-darker-bg+2
                                       :foreground gruber-darker-yellow
                                       :bold t))))
+   `(helm-ff-file ((t (:foreground ,gruber-darker-fg :inherit nil))))
+   `(helm-ff-directory ((t ,(list :foreground gruber-darker-quartz+1
+                                  :background gruber-darker-bg
+                                  :bold t))))
+   `(helm-ff-symlink ((t (:foreground ,gruber-darker-yellow :bold t))))
+   `(helm-ff-executable ((t (:foreground ,gruber-darker-green))))
+   `(helm-ff-invalid-symlink ((t ,(list :foreground gruber-darker-bg
+                                        :background gruber-darker-red))))
+   
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
