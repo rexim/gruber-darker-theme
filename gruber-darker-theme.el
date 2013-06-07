@@ -193,6 +193,9 @@
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
+   `(compilation-warning ((t ,(list :foreground gruber-darker-brown
+                                    :bold t
+                                    :inherit nil))))
 
    ;; flymake
    `(flymake-errline ((t ,(list :background gruber-darker-bg-1
