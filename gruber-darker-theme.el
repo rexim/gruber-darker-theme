@@ -59,8 +59,8 @@
       (gruber-darker-brown    "#cc8c3c")
       (gruber-darker-sea-wave "#5f627f")
       (gruber-darker-quartz   "#95a99f")
-      (gruber-darker-quartz+1 "#96a6c8")
-      (gruber-darker-quartz+2 "#9e95c7")
+      (gruber-darker-niagara  "#96a6c8")
+      (gruber-darker-wisteria "#9e95c7")
       )
   (custom-theme-set-variables
    'gruber-darker
@@ -80,7 +80,7 @@
    `(font-lock-string-face ((t (:foreground ,gruber-darker-green))))
    `(font-lock-keyword-face ((t (:foreground ,gruber-darker-yellow :bold t))))
    `(font-lock-builtin-face ((t (:foreground ,gruber-darker-yellow))))
-   `(font-lock-function-name-face ((t (:foreground ,gruber-darker-quartz+1))))
+   `(font-lock-function-name-face ((t (:foreground ,gruber-darker-niagara))))
    `(font-lock-variable-name-face ((t (:foreground ,gruber-darker-fg+1))))
    `(font-lock-preprocessor-face ((t (:foreground ,gruber-darker-quartz))))
    `(font-lock-constant-face ((t (:foreground ,gruber-darker-quartz))))
@@ -89,8 +89,8 @@
    `(font-lock-reference-face ((t (:foreground ,gruber-darker-quartz))))
    `(trailing-whitespace ((t ,(list :foreground gruber-darker-black
                                     :background gruber-darker-red))))
-   `(link ((t (:foreground ,gruber-darker-quartz+1 :underline t))))
-   `(link-visited ((t (:foreground ,gruber-darker-quartz+2 :underline t))))
+   `(link ((t (:foreground ,gruber-darker-niagara :underline t))))
+   `(link-visited ((t (:foreground ,gruber-darker-wisteria :underline t))))
    `(match ((t (:background ,gruber-darker-bg+4))))
 
    ;; Search
@@ -113,7 +113,7 @@
                                     :foreground gruber-darker-white))))
    `(mode-line-inactive ((t ,(list :background gruber-darker-bg+2
                                    :foreground gruber-darker-gray+1))))
-   `(minibuffer-prompt ((t (:foreground ,gruber-darker-quartz+1))))
+   `(minibuffer-prompt ((t (:foreground ,gruber-darker-niagara))))
    `(region ((t (:background ,gruber-darker-bg+3))))
    `(secondary-selection ((t ,(list :background gruber-darker-bg+3
                                     :foreground gruber-darker-fg+1))))
@@ -140,37 +140,37 @@
    `(holiday-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Info
-   `(info-xref ((t (:foreground ,gruber-darker-quartz+1))))
-   `(info-visited ((t (:foreground ,gruber-darker-quartz+2))))
+   `(info-xref ((t (:foreground ,gruber-darker-niagara))))
+   `(info-visited ((t (:foreground ,gruber-darker-wisteria))))
 
    ;; AUCTeX
-   `(font-latex-sectioning-5-face ((t ,(list :foreground gruber-darker-quartz+1
+   `(font-latex-sectioning-5-face ((t ,(list :foreground gruber-darker-niagara
                                              :bold t))))
    `(font-latex-bold-face ((t (:foreground ,gruber-darker-quartz :bold t))))
    `(font-latex-italic-face ((t (:foreground ,gruber-darker-quartz :italic t))))
    `(font-latex-math-face ((t (:foreground ,gruber-darker-green))))
    `(font-latex-string-face ((t (:foreground ,gruber-darker-green))))
    `(font-latex-warning-face ((t (:foreground ,gruber-darker-red))))
-   `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-quartz+1))))
+   `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-niagara))))
 
    ;; linum-mode
    `(linum ((t `(list :foreground gruber-darker-quartz
                       :background gruber-darker-bg))))
 
    ;; EShell
-   `(eshell-ls-directory ((t (:foreground ,gruber-darker-quartz+1))))
+   `(eshell-ls-directory ((t (:foreground ,gruber-darker-niagara))))
    `(eshell-ls-symlink ((t (:foreground ,gruber-darker-yellow))))
    `(eshell-ls-backup ((t (:foreground ,gruber-darker-quartz))))
    `(eshell-ls-executable ((t (:foreground ,gruber-darker-green))))
 
    ;; Dired
-   `(dired-directory ((t (:foreground ,gruber-darker-quartz+1 :weight bold))))
+   `(dired-directory ((t (:foreground ,gruber-darker-niagara :weight bold))))
    `(dired-ignored ((t (:foreground ,gruber-darker-quartz :inherit nil))))
 
    ;; ido-mode
    `(ido-first-match ((t (:foreground ,gruber-darker-yellow :bold nil))))
    `(ido-only-match ((t (:foreground ,gruber-darker-brown :weight bold))))
-   `(ido-subdir ((t (:foreground ,gruber-darker-quartz+1 :weight bold))))
+   `(ido-subdir ((t (:foreground ,gruber-darker-niagara :weight bold))))
 
    ;; helm-mode
    `(helm-source-header ((t ,(list :foreground gruber-darker-yellow
@@ -183,7 +183,7 @@
                                       :foreground gruber-darker-yellow
                                       :bold t))))
    `(helm-ff-file ((t (:foreground ,gruber-darker-fg :inherit nil))))
-   `(helm-ff-directory ((t ,(list :foreground gruber-darker-quartz+1
+   `(helm-ff-directory ((t ,(list :foreground gruber-darker-niagara
                                   :background gruber-darker-bg
                                   :bold t))))
    `(helm-ff-symlink ((t (:foreground ,gruber-darker-yellow :bold t))))
@@ -207,13 +207,13 @@
    ;; egg
    `(egg-text-base ((t (:foreground ,gruber-darker-fg))))
    `(egg-help-header-1 ((t (:foreground ,gruber-darker-yellow))))
-   `(egg-help-header-2 ((t (:foreground ,gruber-darker-quartz+1))))
+   `(egg-help-header-2 ((t (:foreground ,gruber-darker-niagara))))
    `(egg-branch ((t (:foreground ,gruber-darker-yellow))))
    `(egg-branch-mono ((t (:foreground ,gruber-darker-yellow))))
    `(egg-term ((t (:foreground ,gruber-darker-yellow))))
    `(egg-diff-add ((t (:foreground ,gruber-darker-green))))
    `(egg-diff-del ((t (:foreground ,gruber-darker-red))))
-   `(egg-diff-file-header ((t (:foreground ,gruber-darker-quartz+2))))
+   `(egg-diff-file-header ((t (:foreground ,gruber-darker-wisteria))))
    `(egg-section-title ((t (:foreground ,gruber-darker-yellow))))
 
    ;; message
