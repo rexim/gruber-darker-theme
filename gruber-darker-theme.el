@@ -36,16 +36,18 @@
 (deftheme gruber-darker
   "Gruber Darker color theme for Emacs 24")
 
-;; Install rainbow-mode.
+;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
-(let ((gruber-darker-black    "black")
-      (gruber-darker-black+1  "#111")
-      (gruber-darker-white    "white")
-      (gruber-darker-fg       "#e4e4ef")
+(let ((gruber-darker-fg       "#e4e4ef")
       (gruber-darker-fg+1     "#f4f4ff")
       (gruber-darker-fg+2     "#f5f5f5")
+      (gruber-darker-white    "#ffffff")
+
+      ;; FIXME(rexim): I think those can be replaced be one of bg(+|-)x ones.
       (gruber-darker-gray     "#444")
       (gruber-darker-gray+1   "#999")
+
+      (gruber-darker-black    "#000000")
       (gruber-darker-bg-1     "#101010")
       (gruber-darker-bg       "#181818")
       (gruber-darker-bg+1     "#282828")
@@ -103,9 +105,9 @@
                              :background gruber-darker-red))))
 
    ;; User interface
-   `(fringe ((t ,(list :background gruber-darker-black+1
+   `(fringe ((t ,(list :background gruber-darker-bg-1
                        :foreground gruber-darker-gray))))
-   `(border ((t ,(list :background gruber-darker-black+1
+   `(border ((t ,(list :background gruber-darker-bg-1
                        :foreground gruber-darker-gray))))
    `(mode-line ((t ,(list :background gruber-darker-bg+2
                           :foreground gruber-darker-white))))
