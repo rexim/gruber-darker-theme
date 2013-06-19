@@ -42,11 +42,6 @@
       (gruber-darker-fg+1     "#f4f4ff")
       (gruber-darker-fg+2     "#f5f5f5")
       (gruber-darker-white    "#ffffff")
-
-      ;; FIXME(rexim): I think those can be replaced be one of bg(+|-)x ones.
-      (gruber-darker-gray     "#444")
-      (gruber-darker-gray+1   "#999")
-
       (gruber-darker-black    "#000000")
       (gruber-darker-bg-1     "#101010")
       (gruber-darker-bg       "#181818")
@@ -106,15 +101,15 @@
 
    ;; User interface
    `(fringe ((t ,(list :background gruber-darker-bg-1
-                       :foreground gruber-darker-gray))))
+                       :foreground gruber-darker-bg+2))))
    `(border ((t ,(list :background gruber-darker-bg-1
-                       :foreground gruber-darker-gray))))
+                       :foreground gruber-darker-bg+2))))
    `(mode-line ((t ,(list :background gruber-darker-bg+2
                           :foreground gruber-darker-white))))
    `(mode-line-buffer-id ((t ,(list :background gruber-darker-bg+2
                                     :foreground gruber-darker-white))))
    `(mode-line-inactive ((t ,(list :background gruber-darker-bg+2
-                                   :foreground gruber-darker-gray+1))))
+                                   :foreground gruber-darker-quartz))))
    `(minibuffer-prompt ((t (:foreground ,gruber-darker-niagara))))
    `(region ((t (:background ,gruber-darker-bg+3))))
    `(secondary-selection ((t ,(list :background gruber-darker-bg+3
