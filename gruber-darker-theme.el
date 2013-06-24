@@ -79,7 +79,7 @@
    ;; Basic Coloring (or Uncategorized)
    `(border ((t ,(list :background gruber-darker-bg-1
                        :foreground gruber-darker-bg+2))))
-   `(cursor ((t (:background ,gruber-darker-fg))))
+   `(cursor ((t (:background ,gruber-darker-yellow))))
    `(default ((t ,(list :foreground gruber-darker-fg
                         :background gruber-darker-bg))))
    `(fringe ((t ,(list :background gruber-darker-bg-1
