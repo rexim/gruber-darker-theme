@@ -147,11 +147,8 @@
    `(font-lock-warning-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Flymake
-   `(flymake-errline ((t ,(list :background gruber-darker-bg-1
-                                :foreground gruber-darker-red
-                                :bold t
-                                :underline t))))
-   `(flymake-warnline ((t (:background ,gruber-darker-bg+1 :italic t))))
+   `(flymake-errline ((t (:background "#501515"))))
+   `(flymake-warnline ((t (:background "#202050"))))
 
    ;; Helm
    `(helm-candidate-number ((t ,(list :background gruber-darker-bg+2
