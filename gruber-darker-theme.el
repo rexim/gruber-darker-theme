@@ -216,8 +216,8 @@
                                        :background gruber-darker-sea-wave))))
 
    ;; Show Paren
-   `(show-paren-match-face ((t ,(list :background gruber-darker-bg+4))))
-   `(show-paren-mismatch-face ((t ,(list :background gruber-darker-red-1))))
+   `(show-paren-match-face ((t (:background ,gruber-darker-bg+4))))
+   `(show-paren-mismatch-face ((t (:background ,gruber-darker-red-1))))
    ))
 
 ;;;###autoload
