@@ -150,6 +150,10 @@
    `(flymake-errline ((t (:background "#501515"))))
    `(flymake-warnline ((t (:background "#202050"))))
 
+   ;; Flyspell
+   `(flyspell-incorrect ((t (:foreground ,gruber-darker-red))))
+   `(flyspell-duplicate ((t (:foreground ,gruber-darker-yellow))))
+
    ;; Helm
    `(helm-candidate-number ((t ,(list :background gruber-darker-bg+2
                                       :foreground gruber-darker-yellow
