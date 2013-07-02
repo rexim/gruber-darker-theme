@@ -120,6 +120,7 @@
    `(egg-diff-file-header ((t (:foreground ,gruber-darker-wisteria))))
    `(egg-help-header-1 ((t (:foreground ,gruber-darker-yellow))))
    `(egg-help-header-2 ((t (:foreground ,gruber-darker-niagara))))
+   `(egg-log-HEAD-name ((t (:box (:color ,gruber-darker-fg)))))
    `(egg-reflog-mono ((t (:foreground ,gruber-darker-niagara-1))))
    `(egg-section-title ((t (:foreground ,gruber-darker-yellow))))
    `(egg-text-base ((t (:foreground ,gruber-darker-fg))))
