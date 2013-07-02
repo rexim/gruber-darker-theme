@@ -38,26 +38,26 @@
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
-(let ((gruber-darker-fg       "#e4e4ef")
-      (gruber-darker-fg+1     "#f4f4ff")
-      (gruber-darker-fg+2     "#f5f5f5")
-      (gruber-darker-white    "#ffffff")
-      (gruber-darker-black    "#000000")
-      (gruber-darker-bg-1     "#101010")
-      (gruber-darker-bg       "#181818")
-      (gruber-darker-bg+1     "#282828")
-      (gruber-darker-bg+2     "#453d41")
-      (gruber-darker-bg+3     "#484848")
-      (gruber-darker-bg+4     "#52494e")
-      (gruber-darker-red-1    "#c73c3f")
-      (gruber-darker-red      "#f43841")
-      (gruber-darker-green    "#73c936")
-      (gruber-darker-yellow   "#ffdd33")
-      (gruber-darker-brown    "#cc8c3c")
-      (gruber-darker-sea-wave "#5f627f")
-      (gruber-darker-quartz   "#95a99f")
-      (gruber-darker-niagara  "#96a6c8")
-      (gruber-darker-wisteria "#9e95c7")
+(let ((gruber-darker-fg        "#e4e4ef")
+      (gruber-darker-fg+1      "#f4f4ff")
+      (gruber-darker-fg+2      "#f5f5f5")
+      (gruber-darker-white     "#ffffff")
+      (gruber-darker-black     "#000000")
+      (gruber-darker-bg-1      "#101010")
+      (gruber-darker-bg        "#181818")
+      (gruber-darker-bg+1      "#282828")
+      (gruber-darker-bg+2      "#453d41")
+      (gruber-darker-bg+3      "#484848")
+      (gruber-darker-bg+4      "#52494e")
+      (gruber-darker-red-1     "#c73c3f")
+      (gruber-darker-red       "#f43841")
+      (gruber-darker-green     "#73c936")
+      (gruber-darker-yellow    "#ffdd33")
+      (gruber-darker-brown     "#cc8c3c")
+      (gruber-darker-quartz    "#95a99f")
+      (gruber-darker-niagara-1 "#5f627f")
+      (gruber-darker-niagara   "#96a6c8")
+      (gruber-darker-wisteria  "#9e95c7")
       )
   (custom-theme-set-variables
    'gruber-darker
@@ -120,6 +120,7 @@
    `(egg-diff-file-header ((t (:foreground ,gruber-darker-wisteria))))
    `(egg-help-header-1 ((t (:foreground ,gruber-darker-yellow))))
    `(egg-help-header-2 ((t (:foreground ,gruber-darker-niagara))))
+   `(egg-reflog-mono ((t (:foreground ,gruber-darker-niagara-1))))
    `(egg-section-title ((t (:foreground ,gruber-darker-yellow))))
    `(egg-text-base ((t (:foreground ,gruber-darker-fg))))
    `(egg-term ((t (:foreground ,gruber-darker-yellow))))
@@ -217,7 +218,7 @@
                              :background gruber-darker-red))))
    `(isearch-lazy-highlight-face ((t ,(list
                                        :foreground gruber-darker-fg+1
-                                       :background gruber-darker-sea-wave))))
+                                       :background gruber-darker-niagara-1))))
 
    ;; Show Paren
    `(show-paren-match-face ((t (:background ,gruber-darker-bg+4))))
