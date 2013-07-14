@@ -224,6 +224,9 @@
    ;; Show Paren
    `(show-paren-match-face ((t (:background ,gruber-darker-bg+4))))
    `(show-paren-mismatch-face ((t (:background ,gruber-darker-red-1))))
+
+   ;; Slime
+   `(slime-repl-inputed-output-face ((t (:foreground ,gruber-darker-red))))
    ))
 
 ;;;###autoload
