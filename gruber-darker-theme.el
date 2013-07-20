@@ -214,6 +214,10 @@
    `(mode-line-inactive ((t ,(list :background gruber-darker-bg+2
                                    :foreground gruber-darker-quartz))))
 
+   ;; Org Mode
+   `(org-done ((t (:foreground ,gruber-darker-green))))
+   `(org-todo ((t (:foreground ,gruber-darker-red-1))))
+
    ;; Search
    `(isearch ((t ,(list :foreground gruber-darker-black
                         :background gruber-darker-fg+2))))
