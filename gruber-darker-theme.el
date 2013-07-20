@@ -49,6 +49,7 @@
       (gruber-darker-bg+2      "#453d41")
       (gruber-darker-bg+3      "#484848")
       (gruber-darker-bg+4      "#52494e")
+      (gruber-darker-red-2     "#501515")
       (gruber-darker-red-1     "#c73c3f")
       (gruber-darker-red       "#f43841")
       (gruber-darker-green     "#73c936")
@@ -58,6 +59,7 @@
       (gruber-darker-niagara-1 "#5f627f")
       (gruber-darker-niagara   "#96a6c8")
       (gruber-darker-wisteria  "#9e95c7")
+      (gruber-darker-blue      "#202050")
       )
   (custom-theme-set-variables
    'gruber-darker
@@ -149,8 +151,8 @@
    `(font-lock-warning-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Flymake
-   `(flymake-errline ((t (:background "#501515"))))
-   `(flymake-warnline ((t (:background "#202050"))))
+   `(flymake-errline ((t (:background ,gruber-darker-red-2))))
+   `(flymake-warnline ((t (:background ,gruber-darker-blue))))
 
    ;; Flyspell
    `(flyspell-incorrect ((t (:foreground ,gruber-darker-red))))
