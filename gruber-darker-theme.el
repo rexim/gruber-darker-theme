@@ -59,7 +59,7 @@
       (gruber-darker-niagara-1 "#5f627f")
       (gruber-darker-niagara   "#96a6c8")
       (gruber-darker-wisteria  "#9e95c7")
-      (gruber-darker-blue      "#202050")
+      (gruber-darker-blue-2    "#202050")
       )
   (custom-theme-set-variables
    'gruber-darker
@@ -152,7 +152,7 @@
 
    ;; Flymake
    `(flymake-errline ((t (:background ,gruber-darker-red-2))))
-   `(flymake-warnline ((t (:background ,gruber-darker-blue))))
+   `(flymake-warnline ((t (:background ,gruber-darker-blue-2))))
 
    ;; Flyspell
    `(flyspell-incorrect ((t (:foreground ,gruber-darker-red))))
