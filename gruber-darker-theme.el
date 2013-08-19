@@ -110,6 +110,10 @@
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
 
+   ;; Diff
+   `(diff-removed ((t (:foreground ,gruber-darker-red))))
+   `(diff-added ((t (:foreground ,gruber-darker-green))))
+
    ;; Dired
    `(dired-directory ((t (:foreground ,gruber-darker-niagara :weight bold))))
    `(dired-ignored ((t (:foreground ,gruber-darker-quartz :inherit nil))))
