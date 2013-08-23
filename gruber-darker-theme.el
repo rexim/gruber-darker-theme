@@ -52,6 +52,7 @@
       (gruber-darker-red-2     "#501515")
       (gruber-darker-red-1     "#c73c3f")
       (gruber-darker-red       "#f43841")
+      (gruber-darker-red+1     "#ff4f58")
       (gruber-darker-green     "#73c936")
       (gruber-darker-yellow    "#ffdd33")
       (gruber-darker-brown     "#cc8c3c")
@@ -240,6 +241,9 @@
    `(isearch-lazy-highlight-face ((t ,(list
                                        :foreground gruber-darker-fg+1
                                        :background gruber-darker-niagara-1))))
+
+   ;; Sh
+   `(sh-quoted-exec ((t (:foreground ,gruber-darker-red+1))))
 
    ;; Show Paren
    `(show-paren-match-face ((t (:background ,gruber-darker-bg+4))))
