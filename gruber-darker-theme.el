@@ -209,7 +209,7 @@
                       :background gruber-darker-bg))))
 
    ;; Magit
-   `(magit-log-sha1 ((t (:foreground ,gruber-darker-red))))
+   `(magit-log-sha1 ((t (:foreground ,gruber-darker-red+1))))
    `(magit-log-author ((t (:foreground ,gruber-darker-brown))))
    `(magit-log-head-label-remote ((t ,(list :foreground gruber-darker-green
                                             :background gruber-darker-bg+1))))
