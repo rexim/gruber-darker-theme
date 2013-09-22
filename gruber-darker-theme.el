@@ -254,6 +254,9 @@
 
    ;; Slime
    `(slime-repl-inputed-output-face ((t (:foreground ,gruber-darker-red))))
+
+   ;; Tuareg
+   `(tuareg-font-lock-governing-face ((t (:foreground ,gruber-darker-yellow))))
    ))
 
 ;;;###autoload
