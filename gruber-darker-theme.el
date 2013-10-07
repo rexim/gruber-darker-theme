@@ -119,6 +119,10 @@
    `(dired-directory ((t (:foreground ,gruber-darker-niagara :weight bold))))
    `(dired-ignored ((t (:foreground ,gruber-darker-quartz :inherit nil))))
 
+   ;; Ebrowse
+   `(ebrowse-root-class ((t (:foreground ,gruber-darker-niagara :weight bold))))
+   `(ebrowse-progress ((t (:background ,gruber-darker-niagara))))
+
    ;; Egg
    `(egg-branch ((t (:foreground ,gruber-darker-yellow))))
    `(egg-branch-mono ((t (:foreground ,gruber-darker-yellow))))
