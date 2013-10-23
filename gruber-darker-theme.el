@@ -107,6 +107,13 @@
    `(compilation-warning ((t ,(list :foreground gruber-darker-brown
                                     :bold t
                                     :inherit nil))))
+   `(compilation-error ((t (:foreground ,gruber-darker-red))))
+   `(compilation-mode-line-fail ((t ,(list :foreground gruber-darker-red
+                                           :weight 'bold
+                                           :inherit nil))))
+   `(compilation-mode-line-exit ((t ,(list :foreground gruber-darker-green
+                                           :weight 'bold
+                                           :inherit nil))))
 
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
