@@ -229,11 +229,11 @@
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
 
    ;; Mode Line
-   `(mode-line ((t ,(list :background gruber-darker-bg+2
+   `(mode-line ((t ,(list :background gruber-darker-bg+1
                           :foreground gruber-darker-white))))
-   `(mode-line-buffer-id ((t ,(list :background gruber-darker-bg+2
+   `(mode-line-buffer-id ((t ,(list :background gruber-darker-bg+1
                                     :foreground gruber-darker-white))))
-   `(mode-line-inactive ((t ,(list :background gruber-darker-bg+2
+   `(mode-line-inactive ((t ,(list :background gruber-darker-bg+1
                                    :foreground gruber-darker-quartz))))
 
    ;; Org Mode
