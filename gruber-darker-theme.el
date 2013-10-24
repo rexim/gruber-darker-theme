@@ -274,7 +274,8 @@
    `(tuareg-font-lock-governing-face ((t (:foreground ,gruber-darker-yellow))))
 
    ;; Speedbar
-   `(speedbar-directory-face ((t (:foreground ,gruber-darker-niagara :weight bold))))
+   `(speedbar-directory-face ((t ,(list :foreground gruber-darker-niagara
+                                        :weight 'bold))))
    `(speedbar-file-face ((t (:foreground ,gruber-darker-fg))))
    `(speedbar-highlight-face ((t (:background ,gruber-darker-bg+1))))
    `(speedbar-selected-face ((t (:foreground ,gruber-darker-red))))
