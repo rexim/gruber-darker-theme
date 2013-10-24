@@ -237,15 +237,11 @@
 
    ;; Mode Line
    `(mode-line ((t ,(list :background gruber-darker-bg+1
-                          :foreground gruber-darker-white
-                          :box (list :style 'pressed-button
-                                     :line-width -1)))))
+                          :foreground gruber-darker-white))))
    `(mode-line-buffer-id ((t ,(list :background gruber-darker-bg+1
                                     :foreground gruber-darker-white))))
    `(mode-line-inactive ((t ,(list :background gruber-darker-bg+1
-                                   :foreground gruber-darker-quartz
-                                   :box (list :style 'released-button
-                                              :line-width -1)))))
+                                   :foreground gruber-darker-quartz))))
 
    ;; Org Mode
    `(org-done ((t (:foreground ,gruber-darker-green))))
