@@ -228,6 +228,8 @@
                                            :background gruber-darker-bg+1))))
    `(magit-log-head-label-tags ((t ,(list :foreground gruber-darker-yellow
                                           :background gruber-darker-bg+1))))
+   `(magit-log-head-label-head ((t ,(list :foreground gruber-darker-fg
+                                          :background gruber-darker-bg+1))))
    `(magit-item-highlight ((t (:background ,gruber-darker-bg+1))))
    `(magit-diff-hunk-header ((t (:background ,gruber-darker-bg+2))))
    `(magit-diff-file-header ((t (:background ,gruber-darker-bg+4))))
