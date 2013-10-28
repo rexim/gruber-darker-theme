@@ -107,7 +107,7 @@
    `(compilation-warning ((t ,(list :foreground gruber-darker-brown
                                     :bold t
                                     :inherit nil))))
-   `(compilation-error ((t (:foreground ,gruber-darker-red))))
+   `(compilation-error ((t (:foreground ,gruber-darker-red+1))))
    `(compilation-mode-line-fail ((t ,(list :foreground gruber-darker-red
                                            :weight 'bold
                                            :inherit nil))))
