@@ -91,9 +91,9 @@
    `(link-visited ((t (:foreground ,gruber-darker-wisteria :underline t))))
    `(match ((t (:background ,gruber-darker-bg+4))))
    `(minibuffer-prompt ((t (:foreground ,gruber-darker-niagara))))
-   `(region ((t (:background ,gruber-darker-bg+3))))
+   `(region ((t (:background ,gruber-darker-bg+3 :foreground nil))))
    `(secondary-selection ((t ,(list :background gruber-darker-bg+3
-                                    :foreground gruber-darker-fg+1))))
+                                    :foreground nil))))
    `(trailing-whitespace ((t ,(list :foreground gruber-darker-black
                                     :background gruber-darker-red))))
    `(tooltip ((t ,(list :background gruber-darker-bg+4
