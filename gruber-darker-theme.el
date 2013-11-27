@@ -49,12 +49,10 @@
       (gruber-darker-bg+2      "#453d41")
       (gruber-darker-bg+3      "#484848")
       (gruber-darker-bg+4      "#52494e")
-      (gruber-darker-red-bg    "#282020")
       (gruber-darker-red-2     "#501515")
       (gruber-darker-red-1     "#c73c3f")
       (gruber-darker-red       "#f43841")
       (gruber-darker-red+1     "#ff4f58")
-      (gruber-darker-green-bg  "#202820")
       (gruber-darker-green     "#73c936")
       (gruber-darker-yellow    "#ffdd33")
       (gruber-darker-brown     "#cc8c3c")
@@ -122,9 +120,9 @@
 
    ;; Diff
    `(diff-removed ((t ,(list :foreground gruber-darker-red+1
-                             :background gruber-darker-red-bg))))
+                             :background nil))))
    `(diff-added ((t ,(list :foreground gruber-darker-green
-                           :background gruber-darker-green-bg))))
+                           :background nil))))
 
    ;; Dired
    `(dired-directory ((t (:foreground ,gruber-darker-niagara :weight bold))))
