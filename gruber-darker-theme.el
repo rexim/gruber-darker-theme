@@ -173,8 +173,14 @@
    `(flymake-warnline ((t (:background ,gruber-darker-blue-2))))
 
    ;; Flyspell
-   `(flyspell-incorrect ((t (:foreground ,gruber-darker-red))))
-   `(flyspell-duplicate ((t (:foreground ,gruber-darker-yellow))))
+   `(flyspell-incorrect
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,gruber-darker-red) :inherit unspecified))
+      (t (:foreground ,gruber-darker-red :weight bold :underline t))))
+   `(flyspell-duplicate
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,gruber-darker-yellow) :inherit unspecified))
+      (t (:foreground ,gruber-darker-yellow :weight bold :underline t))))
 
    ;; Helm
    `(helm-candidate-number ((t ,(list :background gruber-darker-bg+2
