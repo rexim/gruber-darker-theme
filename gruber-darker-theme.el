@@ -103,17 +103,18 @@
    `(holiday-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Compilation
-   `(compilation-info ((t (:foreground ,gruber-darker-green :inherit nil))))
+   `(compilation-info ((t ,(list :foreground gruber-darker-green
+                                 :inherit 'unspecified))))
    `(compilation-warning ((t ,(list :foreground gruber-darker-brown
                                     :bold t
-                                    :inherit nil))))
+                                    :inherit 'unspecified))))
    `(compilation-error ((t (:foreground ,gruber-darker-red+1))))
    `(compilation-mode-line-fail ((t ,(list :foreground gruber-darker-red
                                            :weight 'bold
-                                           :inherit nil))))
+                                           :inherit 'unspecified))))
    `(compilation-mode-line-exit ((t ,(list :foreground gruber-darker-green
                                            :weight 'bold
-                                           :inherit nil))))
+                                           :inherit 'unspecified))))
 
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
@@ -126,7 +127,8 @@
 
    ;; Dired
    `(dired-directory ((t (:foreground ,gruber-darker-niagara :weight bold))))
-   `(dired-ignored ((t (:foreground ,gruber-darker-quartz :inherit nil))))
+   `(dired-ignored ((t ,(list :foreground gruber-darker-quartz
+                              :inherit 'unspecified))))
 
    ;; Ebrowse
    `(ebrowse-root-class ((t (:foreground ,gruber-darker-niagara :weight bold))))
@@ -190,7 +192,7 @@
                                   :background gruber-darker-bg
                                   :bold t))))
    `(helm-ff-executable ((t (:foreground ,gruber-darker-green))))
-   `(helm-ff-file ((t (:foreground ,gruber-darker-fg :inherit nil))))
+   `(helm-ff-file ((t (:foreground ,gruber-darker-fg :inherit unspecified))))
    `(helm-ff-invalid-symlink ((t ,(list :foreground gruber-darker-bg
                                         :background gruber-darker-red))))
    `(helm-ff-symlink ((t (:foreground ,gruber-darker-yellow :bold t))))
