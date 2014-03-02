@@ -49,7 +49,6 @@
       (gruber-darker-bg+2      "#453d41")
       (gruber-darker-bg+3      "#484848")
       (gruber-darker-bg+4      "#52494e")
-      (gruber-darker-red-2     "#501515")
       (gruber-darker-red-1     "#c73c3f")
       (gruber-darker-red       "#f43841")
       (gruber-darker-red+1     "#ff4f58")
@@ -60,7 +59,6 @@
       (gruber-darker-niagara-1 "#5f627f")
       (gruber-darker-niagara   "#96a6c8")
       (gruber-darker-wisteria  "#9e95c7")
-      (gruber-darker-blue-2    "#202050")
       )
   (custom-theme-set-variables
    'gruber-darker
@@ -171,8 +169,27 @@
    `(font-lock-warning-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Flymake
-   `(flymake-errline ((t (:background ,gruber-darker-red-2))))
-   `(flymake-warnline ((t (:background ,gruber-darker-blue-2))))
+   `(flymake-errline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,gruber-darker-red)
+                   :foreground unspecified
+                   :background unspecified
+                   :inherit unspecified))
+      (t (:foreground ,gruber-darker-red :weight bold :underline t))))
+   `(flymake-warnline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,gruber-darker-yellow)
+                   :foreground unspecified
+                   :background unspecified
+                   :inherit unspecified))
+      (t (:forground ,gruber-darker-yellow :weight bold :underline t))))
+   `(flymake-infoline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,gruber-darker-green)
+                   :foreground unspecified
+                   :background unspecified
+                   :inherit unspecified))
+      (t (:forground ,gruber-darker-green :weight bold :underline t))))
 
    ;; Flyspell
    `(flyspell-incorrect
