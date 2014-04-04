@@ -247,6 +247,9 @@
                       :background gruber-darker-bg))))
 
    ;; Magit
+   `(magit-branch ((t (:foreground ,gruber-darker-niagara))))
+   `(magit-diff-hunk-header ((t (:background ,gruber-darker-bg+2))))
+   `(magit-diff-file-header ((t (:background ,gruber-darker-bg+4))))
    `(magit-log-sha1 ((t (:foreground ,gruber-darker-red+1))))
    `(magit-log-author ((t (:foreground ,gruber-darker-brown))))
    `(magit-log-head-label-remote ((t ,(list :foreground gruber-darker-green
@@ -258,8 +261,8 @@
    `(magit-log-head-label-head ((t ,(list :foreground gruber-darker-fg
                                           :background gruber-darker-bg+1))))
    `(magit-item-highlight ((t (:background ,gruber-darker-bg+1))))
-   `(magit-diff-hunk-header ((t (:background ,gruber-darker-bg+2))))
-   `(magit-diff-file-header ((t (:background ,gruber-darker-bg+4))))
+   `(magit-tag ((t ,(list :foreground gruber-darker-yellow
+                          :background gruber-darker-bg))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
