@@ -308,6 +308,16 @@
    `(speedbar-highlight-face ((t (:background ,gruber-darker-bg+1))))
    `(speedbar-selected-face ((t (:foreground ,gruber-darker-red))))
    `(speedbar-tag-face ((t (:foreground ,gruber-darker-yellow))))
+
+   ;; Whitespace
+   `(whitespace-space ((t ,(list :background gruber-darker-bg
+                                 :foreground gruber-darker-bg+2))))
+   `(whitespace-newline ((t ,(list :background gruber-darker-bg
+                                   :foreground gruber-darker-bg+2))))
+   `(whitespace-trailing ((t ,(list :background gruber-darker-red
+                                    :foreground gruber-darker-red))))
+   `(whitespace-empty ((t ,(list :background gruber-darker-yellow
+                                 :foreground gruber-darker-yellow))))
    ))
 
 ;;;###autoload
