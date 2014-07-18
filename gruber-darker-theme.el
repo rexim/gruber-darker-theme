@@ -312,12 +312,24 @@
    ;; Whitespace
    `(whitespace-space ((t ,(list :background gruber-darker-bg
                                  :foreground gruber-darker-bg+2))))
+   `(whitespace-tab ((t ,(list :background gruber-darker-bg
+                               :foreground gruber-darker-bg+2))))
+   `(whitespace-hspace ((t ,(list :background gruber-darker-bg
+                                  :foreground gruber-darker-bg+2))))
+   `(whitespace-line ((t ,(list :background gruber-darker-bg+2
+                                :foreground gruber-darker-red+1))))
    `(whitespace-newline ((t ,(list :background gruber-darker-bg
                                    :foreground gruber-darker-bg+2))))
    `(whitespace-trailing ((t ,(list :background gruber-darker-red
                                     :foreground gruber-darker-red))))
    `(whitespace-empty ((t ,(list :background gruber-darker-yellow
                                  :foreground gruber-darker-yellow))))
+   `(whitespace-indentation ((t ,(list :background gruber-darker-yellow
+                                       :foreground gruber-darker-red))))
+   `(whitespace-space-after-tab ((t ,(list :background gruber-darker-yellow
+                                           :foreground gruber-darker-yellow))))
+   `(whitespace-space-before-tab ((t ,(list :background gruber-darker-brown
+                                            :foreground gruber-darker-brown))))
    ))
 
 ;;;###autoload
