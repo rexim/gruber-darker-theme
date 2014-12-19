@@ -1,3 +1,6 @@
+[![MELPA](http://melpa.org/packages/gruber-darker-theme-badge.svg)](http://melpa.org/#/gruber-darker-theme)
+[![MELPA Stable](http://stable.melpa.org/packages/gruber-darker-theme-badge.svg)](http://stable.melpa.org/#/gruber-darker-theme)
+
 # Gruber Darker #
 
 [Gruber Darker](http://jblevins.org/projects/emacs-color-themes/color-theme-gruber-darker.el.html)
