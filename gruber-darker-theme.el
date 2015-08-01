@@ -236,6 +236,8 @@
    `(jabber-chat-prompt-system ((t (:foreground ,gruber-darker-green))))
    `(jabber-rare-time-face ((t (:foreground ,gruber-darker-green))))
    `(jabber-roster-user-online ((t (:foreground ,gruber-darker-green))))
+   `(jabber-activity-face ((t (:foreground ,gruber-darker-red))))
+   `(jabber-activity-personal-face ((t (:foreground ,gruber-darker-yellow :bold t))))
 
    ;; Line Highlighting
    `(highlight ((t (:background ,gruber-darker-bg+1 :foreground nil))))
