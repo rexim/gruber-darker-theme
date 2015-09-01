@@ -146,6 +146,10 @@
    `(egg-text-base ((t (:foreground ,gruber-darker-fg))))
    `(egg-term ((t (:foreground ,gruber-darker-yellow))))
 
+   ;; ERC
+   `(erc-notice-face ((t (:foreground ,gruber-darker-wisteria))))
+   `(erc-timestamp-face ((t (:foreground ,gruber-darker-green))))
+
    ;; EShell
    `(eshell-ls-backup ((t (:foreground ,gruber-darker-quartz))))
    `(eshell-ls-directory ((t (:foreground ,gruber-darker-niagara))))
