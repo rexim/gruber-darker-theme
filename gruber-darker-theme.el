@@ -149,6 +149,8 @@
    ;; ERC
    `(erc-notice-face ((t (:foreground ,gruber-darker-wisteria))))
    `(erc-timestamp-face ((t (:foreground ,gruber-darker-green))))
+   `(erc-input-face ((t (:foreground ,gruber-darker-red+1))))
+   `(erc-my-nick-face ((t (:foreground ,gruber-darker-red+1))))
 
    ;; EShell
    `(eshell-ls-backup ((t (:foreground ,gruber-darker-quartz))))
