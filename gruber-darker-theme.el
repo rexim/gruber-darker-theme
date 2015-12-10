@@ -318,6 +318,9 @@
    `(speedbar-selected-face ((t (:foreground ,gruber-darker-red))))
    `(speedbar-tag-face ((t (:foreground ,gruber-darker-yellow))))
 
+   ;; Which Function
+   `(which-func ((t (:foreground ,gruber-darker-wisteria))))
+
    ;; Whitespace
    `(whitespace-space ((t ,(list :background gruber-darker-bg
                                  :foreground gruber-darker-bg+2))))
