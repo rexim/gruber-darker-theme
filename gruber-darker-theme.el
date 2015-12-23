@@ -271,6 +271,8 @@
    `(magit-item-highlight ((t (:background ,gruber-darker-bg+1))))
    `(magit-tag ((t ,(list :foreground gruber-darker-yellow
                           :background gruber-darker-bg))))
+   `(magit-blame-heading ((t ,(list :background gruber-darker-bg+1
+                                    :foreground gruber-darker-fg))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
