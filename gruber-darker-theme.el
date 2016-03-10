@@ -289,6 +289,7 @@
    `(org-agenda-structure ((t (:foreground ,gruber-darker-niagara))))
    `(org-done ((t (:foreground ,gruber-darker-green))))
    `(org-todo ((t (:foreground ,gruber-darker-red-1))))
+   `(org-upcoming-deadline ((t (:foreground ,gruber-darker-yellow))))
 
    ;; Search
    `(isearch ((t ,(list :foreground gruber-darker-black
