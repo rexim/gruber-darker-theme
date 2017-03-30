@@ -286,6 +286,9 @@
    `(mode-line-inactive ((t ,(list :background gruber-darker-bg+1
                                    :foreground gruber-darker-quartz))))
 
+   ;; Neo Dir
+   `(neo-dir-link-face ((t (:foreground ,gruber-darker-niagara))))
+
    ;; Org Mode
    `(org-agenda-structure ((t (:foreground ,gruber-darker-niagara))))
    `(org-done ((t (:foreground ,gruber-darker-green))))
