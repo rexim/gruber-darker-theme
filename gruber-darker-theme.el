@@ -68,6 +68,15 @@
   (custom-theme-set-faces
    'gruber-darker
 
+   ;; Agda2
+   `(agda2-highlight-datatype-face ((t (:foreground ,gruber-darker-quartz))))
+   `(agda2-highlight-primitive-type-face ((t (:foreground ,gruber-darker-quartz))))
+   `(agda2-highlight-function-face ((t (:foreground ,gruber-darker-niagara))))
+   `(agda2-highlight-keyword-face ((t ,(list :foreground gruber-darker-yellow
+                                             :bold t))))
+   `(agda2-highlight-inductive-constructor-face ((t (:foreground ,gruber-darker-green))))
+   `(agda2-highlight-number-face ((t (:foreground ,gruber-darker-wisteria))))
+
    ;; AUCTeX
    `(font-latex-bold-face ((t (:foreground ,gruber-darker-quartz :bold t))))
    `(font-latex-italic-face ((t (:foreground ,gruber-darker-quartz :italic t))))
