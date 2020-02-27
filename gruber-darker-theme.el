@@ -57,7 +57,8 @@
       (gruber-darker-yellow    "#ffdd33")
       (gruber-darker-brown     "#cc8c3c")
       (gruber-darker-quartz    "#95a99f")
-      (gruber-darker-niagara-1 "#5f627f")
+      (gruber-darker-niagara-2 "#303540")
+      (gruber-darker-niagara-1 "#565f73")
       (gruber-darker-niagara   "#96a6c8")
       (gruber-darker-wisteria  "#9e95c7")
       )
@@ -374,6 +375,9 @@
    `(company-scrollbar-bg ((t (:background ,gruber-darker-bg+2))))
    `(company-preview ((t (:background ,gruber-darker-green))))
    `(company-preview-common ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg-1))))
+
+   ;;;;; Proof General
+   `(proof-locked-face ((t (:background ,gruber-darker-niagara-2))))
    ))
 
 ;;;###autoload
