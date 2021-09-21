@@ -262,6 +262,10 @@
    `(highlight-current-line-face ((t ,(list :background gruber-darker-bg+1
                                             :foreground nil))))
 
+   ;; line numbers
+   `(line-number ((t (:inherit default :foreground ,gruber-darker-bg+4))))
+   `(line-number-current-line ((t (:inherit line-number :foreground ,gruber-darker-yellow))))
+
    ;; Linum
    `(linum ((t `(list :foreground gruber-darker-quartz
                       :background gruber-darker-bg))))
