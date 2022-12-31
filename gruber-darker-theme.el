@@ -392,7 +392,7 @@
    `(term-color-cyan ((t (:foreground ,gruber-darker-quartz :background ,gruber-darker-quartz))))
    `(term-color-white ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-white))))
 
-;;;;; rainbow-delimiters
+   ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,gruber-theme-violet))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,gruber-theme-blue))))
    `(rainbow-delimiters-depth-3-face ((t (:foreground ,gruber-theme-green))))
@@ -406,7 +406,7 @@
    `(rainbow-delimiters-depth-11-face ((t (:foreground ,gruber-theme-orange))))
    `(rainbow-delimiters-depth-12-face ((t (:foreground ,gruber-theme-red))))
 
-;;;;; company-mode
+   ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,gruber-darker-brown :background ,gruber-darker-bg+1))))
    `(company-tooltip-annotation-selection ((t (:foreground ,gruber-darker-brown :background ,gruber-darker-bg-1))))
@@ -419,7 +419,7 @@
    `(company-preview ((t (:background ,gruber-darker-green))))
    `(company-preview-common ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg-1))))
 
-;;;;; Proof General
+   ;;;;; Proof General
    `(proof-locked-face ((t (:background ,gruber-darker-niagara-2))))
    ))
 
