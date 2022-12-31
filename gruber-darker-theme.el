@@ -33,9 +33,18 @@
 ;; variant of the Gruber Dark theme for BBEdit by John Gruber. Adapted
 ;; for deftheme and extended by Alexey Kutepov a.k.a. rexim.
 
-
 (deftheme gruber-darker
   "Gruber Darker color theme for Emacs 24")
+
+;; Monokai colors for rainbow-delimiters.
+(defcustom gruber-theme-yellow "#E6DB74" "Primary colors - yellow" :type 'string :group 'monokai)
+(defcustom gruber-theme-orange "#FD971F" "Primary colors - orange" :type 'string :group 'monokai)
+(defcustom gruber-theme-red "#F92672" "Primary colors - red" :type 'string :group 'monokai)
+(defcustom gruber-theme-magenta "#FD5FF0" "Primary colors - magenta" :type 'string :group 'monokai)
+(defcustom gruber-theme-blue "#66D9EF" "Primary colors - blue" :type 'string :group 'monokai)
+(defcustom gruber-theme-green "#A6E22E" "Primary colors - green" :type 'string :group 'monokai)
+(defcustom gruber-theme-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
+(defcustom gruber-theme-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
@@ -382,6 +391,20 @@
    `(term-color-magenta ((t (:foreground ,gruber-darker-wisteria :background ,gruber-darker-wisteria))))
    `(term-color-cyan ((t (:foreground ,gruber-darker-quartz :background ,gruber-darker-quartz))))
    `(term-color-white ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-white))))
+
+   ;; rainbow-delimiters
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,gruber-theme-violet))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,gruber-theme-blue))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,gruber-theme-green))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground ,gruber-theme-yellow))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,gruber-theme-orange))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,gruber-theme-red))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground ,gruber-theme-violet))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground ,gruber-theme-blue))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground ,gruber-theme-green))))
+   `(rainbow-delimiters-depth-10-face ((t (:foreground ,gruber-theme-yellow))))
+   `(rainbow-delimiters-depth-11-face ((t (:foreground ,gruber-theme-orange))))
+   `(rainbow-delimiters-depth-12-face ((t (:foreground ,gruber-theme-red))))
 
    ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
