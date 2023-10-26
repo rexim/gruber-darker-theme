@@ -127,6 +127,9 @@
                                            :weight 'bold
                                            :inherit 'unspecified))))
 
+   ;; Completion
+   `(completions-annotations ((t (:inherit 'shadow))))
+
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
 
