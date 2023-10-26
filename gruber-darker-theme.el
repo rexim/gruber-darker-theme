@@ -386,7 +386,7 @@
    `(term-color-cyan ((t (:foreground ,gruber-darker-quartz :background ,gruber-darker-quartz))))
    `(term-color-white ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-white))))
 
-   ;;;;; company-mode
+   ;; company-mode
    `(company-tooltip ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,gruber-darker-brown :background ,gruber-darker-bg+1))))
    `(company-tooltip-annotation-selection ((t (:foreground ,gruber-darker-brown :background ,gruber-darker-bg-1))))
@@ -399,8 +399,14 @@
    `(company-preview ((t (:background ,gruber-darker-green))))
    `(company-preview-common ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg-1))))
 
-   ;;;;; Proof General
+   ;; Proof General
    `(proof-locked-face ((t (:background ,gruber-darker-niagara-2))))
+
+   ;; Orderless
+   `(orderless-match-face-0 ((t (:foreground ,gruber-darker-yellow))))
+   `(orderless-match-face-1 ((t (:foreground ,gruber-darker-green))))
+   `(orderless-match-face-2 ((t (:foreground ,gruber-darker-brown))))
+   `(orderless-match-face-3 ((t (:foreground ,gruber-darker-quartz))))
    ))
 
 ;;;###autoload
