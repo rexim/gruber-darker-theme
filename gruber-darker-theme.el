@@ -310,6 +310,7 @@
 
    ;; Org Mode
    `(org-agenda-structure ((t (:foreground ,gruber-darker-niagara))))
+   `(org-block ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-fg))))
    `(org-column ((t (:background ,gruber-darker-bg-1))))
    `(org-column-title ((t (:background ,gruber-darker-bg-1 :underline t :weight bold))))
    `(org-done ((t (:foreground ,gruber-darker-green))))
