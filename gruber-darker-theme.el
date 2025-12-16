@@ -64,7 +64,7 @@
       )
   (custom-theme-set-variables
    'gruber-darker
-   '(frame-brackground-mode (quote dark)))
+   '(frame-background-mode (quote dark)))
 
   (custom-theme-set-faces
    'gruber-darker
