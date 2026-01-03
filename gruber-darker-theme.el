@@ -300,8 +300,6 @@
    ;; Mode Line
    `(mode-line ((t ,(list :background gruber-darker-bg+1
                           :foreground gruber-darker-white))))
-   `(mode-line-buffer-id ((t ,(list :background gruber-darker-bg+1
-                                    :foreground gruber-darker-white))))
    `(mode-line-inactive ((t ,(list :background gruber-darker-bg+1
                                    :foreground gruber-darker-quartz))))
 
