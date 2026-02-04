@@ -407,6 +407,14 @@
    `(orderless-match-face-1 ((t (:foreground ,gruber-darker-green))))
    `(orderless-match-face-2 ((t (:foreground ,gruber-darker-brown))))
    `(orderless-match-face-3 ((t (:foreground ,gruber-darker-quartz))))
+
+   ;; Avy
+   `(avy-lead-face   ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red+1 :weight bold))))
+   `(avy-lead-face-0 ((t (:foreground ,gruber-darker-black :background ,gruber-darker-wisteria :weight bold))))
+   `(avy-lead-face-1 ((t (:foreground ,gruber-darker-black :background ,gruber-darker-niagara :weight bold))))
+   `(avy-lead-face-2 ((t (:foreground ,gruber-darker-black :background ,gruber-darker-niagara-1 :weight bold))))
+   `(avy-background-face ((t (:foreground ,gruber-darker-niagara-2))))
+   `(avy-goto-char-timer-face ((t (:foreground ,gruber-darker-black :background ,gruber-darker-green :weight bold))))
    ))
 
 ;;;###autoload
