@@ -1,4 +1,4 @@
-;;; gruber-darker-theme.el --- Gruber Darker color theme for Emacs 24.
+;;; gruber-darker-theme.el --- Gruber Darker color theme for Emacs 24.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2013-2016 Alexey Kutepov a.k.a rexim
 ;; Copyright (C) 2009-2010 Jason R. Blevins
